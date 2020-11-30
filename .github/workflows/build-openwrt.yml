@@ -65,9 +65,6 @@ jobs:
         
     - name: feeds clean
       run: cd openwrt && ./scripts/feeds clean
-      
-    - name: openwrt-packages clean
-      run: cd openwrt && rm -rf ./package/openwrt-packages
 
     - name: Load custom feeds
       run: |
